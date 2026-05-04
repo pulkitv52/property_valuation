@@ -1,1 +1,9 @@
 data/
+.env
+backend/.env
+frontend/.env
+logs/*.log
+logs/backend/*.log
+logs/frontend/*.log
+frontend/node_modules/
+frontend/dist/

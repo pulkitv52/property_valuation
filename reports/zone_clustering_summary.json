@@ -1,0 +1,34 @@
+{
+  "input_row_count": 297437,
+  "rows_with_geometry": 225872,
+  "rows_used_for_clustering": 225872,
+  "projected_crs": "{\"$schema\": \"https://proj.org/schemas/v0.7/projjson.schema.json\", \"type\": \"ProjectedCRS\", \"name\": \"WGS 84 / UTM zone 45N\", \"base_crs\": {\"type\": \"GeographicCRS\", \"name\": \"WGS 84\", \"datum_ensemble\": {\"name\": \"World Geodetic System 1984 ensemble\", \"members\": [{\"name\": \"World Geodetic System 1984 (Transit)\"}, {\"name\": \"World Geodetic System 1984 (G730)\"}, {\"name\": \"World Geodetic System 1984 (G873)\"}, {\"name\": \"World Geodetic System 1984 (G1150)\"}, {\"name\": \"World Geodetic System 1984 (G1674)\"}, {\"name\": \"World Geodetic System 1984 (G1762)\"}, {\"name\": \"World Geodetic System 1984 (G2139)\"}, {\"name\": \"World Geodetic System 1984 (G2296)\"}], \"ellipsoid\": {\"name\": \"WGS 84\", \"semi_major_axis\": 6378137, \"inverse_flattening\": 298.257223563}, \"accuracy\": \"2.0\", \"id\": {\"authority\": \"EPSG\", \"code\": 6326}}, \"coordinate_system\": {\"subtype\": \"ellipsoidal\", \"axis\": [{\"name\": \"Geodetic latitude\", \"abbreviation\": \"Lat\", \"direction\": \"north\", \"unit\": \"degree\"}, {\"name\": \"Geodetic longitude\", \"abbreviation\": \"Lon\", \"direction\": \"east\", \"unit\": \"degree\"}]}, \"id\": {\"authority\": \"EPSG\", \"code\": 4326}}, \"conversion\": {\"name\": \"UTM zone 45N\", \"method\": {\"name\": \"Transverse Mercator\", \"id\": {\"authority\": \"EPSG\", \"code\": 9807}}, \"parameters\": [{\"name\": \"Latitude of natural origin\", \"value\": 0, \"unit\": \"degree\", \"id\": {\"authority\": \"EPSG\", \"code\": 8801}}, {\"name\": \"Longitude of natural origin\", \"value\": 87, \"unit\": \"degree\", \"id\": {\"authority\": \"EPSG\", \"code\": 8802}}, {\"name\": \"Scale factor at natural origin\", \"value\": 0.9996, \"unit\": \"unity\", \"id\": {\"authority\": \"EPSG\", \"code\": 8805}}, {\"name\": \"False easting\", \"value\": 500000, \"unit\": \"metre\", \"id\": {\"authority\": \"EPSG\", \"code\": 8806}}, {\"name\": \"False northing\", \"value\": 0, \"unit\": \"metre\", \"id\": {\"authority\": \"EPSG\", \"code\": 8807}}]}, \"coordinate_system\": {\"subtype\": \"Cartesian\", \"axis\": [{\"name\": \"Easting\", \"abbreviation\": \"E\", \"direction\": \"east\", \"unit\": \"metre\"}, {\"name\": \"Northing\", \"abbreviation\": \"N\", \"direction\": \"north\", \"unit\": \"metre\"}]}, \"scope\": \"Navigation and medium accuracy spatial referencing.\", \"area\": \"Between 84\\u00b0E and 90\\u00b0E, northern hemisphere between equator and 84\\u00b0N, onshore and offshore. Bangladesh. Bhutan. China. India. Kazakhstan. Mongolia. Nepal. Russian Federation.\", \"bbox\": {\"south_latitude\": 0, \"west_longitude\": 84, \"north_latitude\": 84, \"east_longitude\": 90}, \"id\": {\"authority\": \"EPSG\", \"code\": 32645}}",
+  "selected_cluster_count": 7,
+  "candidate_cluster_range": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "silhouette_score": 0.38605212155052077,
+  "feature_columns": [
+    "centroid_x",
+    "centroid_y",
+    "log_value_per_area",
+    "log_distance_to_nearest_road",
+    "log_distance_to_nearest_facility",
+    "facility_count_1km",
+    "nearest_road_width",
+    "Urban_flag",
+    "Rural_flag",
+    "flat_flag",
+    "nature_land_use_freq",
+    "proposed_land_use_freq",
+    "nearest_road_category_freq"
+  ],
+  "output_assignment_rows": 225872,
+  "output_zone_rows": 7
+}

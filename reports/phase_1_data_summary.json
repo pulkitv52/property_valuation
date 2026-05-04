@@ -1,0 +1,921 @@
+{
+  "transactions": {
+    "dataset_name": "transactions",
+    "dataset_type": "tabular",
+    "row_count": 344079,
+    "column_count": 56,
+    "columns": [
+      "query_year",
+      "query_no",
+      "book",
+      "Deed_No",
+      "Deed_Year",
+      "Registration_district_code",
+      "Registration_district_Name",
+      "Registration_RO_code",
+      "Registration_Office_Name",
+      "Transaction_code",
+      "Transaction_Name",
+      "Date_of_presentation",
+      "Date_of_Registration",
+      "Time_of_Presentation",
+      "sl_no_Property",
+      "property_district_code",
+      "property_district_Name",
+      "Property_Office_code",
+      "property_Office_Name",
+      "ps_code",
+      "PS_Name",
+      "mouza_code",
+      "Mouza_Name",
+      "plot_code_type",
+      "plot_no",
+      "bata_plot_no",
+      "premises",
+      "Urban",
+      "Rural",
+      "Road_code",
+      "Road_Name",
+      "Zone_no",
+      "Special_project_Name",
+      "Is_Property_on_Road",
+      "Approach_Road_Width",
+      "Adjacent_to_Metal_Road",
+      "Proposed_Land_use_Code",
+      "Proposed_Land_use_Name",
+      "Nature_Land_use_Code",
+      "Nature_Land_use_Name",
+      "Proposed_Apartment_use_Name",
+      "Nature_Apartment_use_name",
+      "Litigated_Property",
+      "bargadar",
+      "whether_tenant_purchaser",
+      "Area_type",
+      "Area",
+      "Types of area Measurement",
+      "Sq ft",
+      "Market value per sq ft",
+      "setforth_value",
+      "market_value",
+      "is_bargadar_purchaser",
+      "Mouza_Type",
+      "Road_Category",
+      "Flat_or_Land"
+    ],
+    "dtypes": {
+      "query_year": "int64",
+      "query_no": "int64",
+      "book": "object",
+      "Deed_No": "int64",
+      "Deed_Year": "int64",
+      "Registration_district_code": "int64",
+      "Registration_district_Name": "object",
+      "Registration_RO_code": "int64",
+      "Registration_Office_Name": "object",
+      "Transaction_code": "int64",
+      "Transaction_Name": "object",
+      "Date_of_presentation": "object",
+      "Date_of_Registration": "object",
+      "Time_of_Presentation": "object",
+      "sl_no_Property": "int64",
+      "property_district_code": "int64",
+      "property_district_Name": "object",
+      "Property_Office_code": "int64",
+      "property_Office_Name": "object",
+      "ps_code": "int64",
+      "PS_Name": "object",
+      "mouza_code": "int64",
+      "Mouza_Name": "object",
+      "plot_code_type": "object",
+      "plot_no": "int64",
+      "bata_plot_no": "int64",
+      "premises": "object",
+      "Urban": "object",
+      "Rural": "object",
+      "Road_code": "object",
+      "Road_Name": "object",
+      "Zone_no": "int64",
+      "Special_project_Name": "object",
+      "Is_Property_on_Road": "object",
+      "Approach_Road_Width": "float64",
+      "Adjacent_to_Metal_Road": "object",
+      "Proposed_Land_use_Code": "object",
+      "Proposed_Land_use_Name": "object",
+      "Nature_Land_use_Code": "object",
+      "Nature_Land_use_Name": "object",
+      "Proposed_Apartment_use_Name": "object",
+      "Nature_Apartment_use_name": "object",
+      "Litigated_Property": "object",
+      "bargadar": "object",
+      "whether_tenant_purchaser": "object",
+      "Area_type": "object",
+      "Area": "float64",
+      "Types of area Measurement": "object",
+      "Sq ft": "float64",
+      "Market value per sq ft": "float64",
+      "setforth_value": "int64",
+      "market_value": "float64",
+      "is_bargadar_purchaser": "object",
+      "Mouza_Type": "object",
+      "Road_Category": "float64",
+      "Flat_or_Land": "object"
+    },
+    "missing_values": {
+      "Road_Category": 344079,
+      "premises": 341027,
+      "Road_Name": 253403,
+      "Proposed_Apartment_use_Name": 183168,
+      "Nature_Apartment_use_name": 183168,
+      "Nature_Land_use_Name": 160911,
+      "bargadar": 160911,
+      "Proposed_Land_use_Name": 160911,
+      "is_bargadar_purchaser": 160911,
+      "whether_tenant_purchaser": 160911,
+      "Special_project_Name": 1929,
+      "Approach_Road_Width": 65,
+      "market_value": 37,
+      "Road_code": 9
+    },
+    "missing_percent": {
+      "Road_Category": 100.0,
+      "premises": 99.11,
+      "Road_Name": 73.65,
+      "Proposed_Apartment_use_Name": 53.23,
+      "Nature_Apartment_use_name": 53.23,
+      "Nature_Land_use_Name": 46.77,
+      "bargadar": 46.77,
+      "Proposed_Land_use_Name": 46.77,
+      "is_bargadar_purchaser": 46.77,
+      "whether_tenant_purchaser": 46.77,
+      "Special_project_Name": 0.56,
+      "Approach_Road_Width": 0.02,
+      "market_value": 0.01,
+      "Road_code": 0.0
+    },
+    "duplicate_row_count": 40653,
+    "candidate_join_keys": [
+      "Deed_No",
+      "Deed_Year",
+      "Registration_district_code",
+      "Registration_district_Name",
+      "Registration_RO_code",
+      "Registration_Office_Name",
+      "Transaction_code",
+      "Transaction_Name",
+      "sl_no_Property",
+      "property_district_code",
+      "property_district_Name",
+      "Property_Office_code",
+      "property_Office_Name",
+      "ps_code",
+      "PS_Name",
+      "mouza_code",
+      "Mouza_Name",
+      "plot_code_type",
+      "plot_no",
+      "bata_plot_no",
+      "premises",
+      "Road_code",
+      "Road_Name",
+      "Zone_no",
+      "Special_project_Name",
+      "Is_Property_on_Road",
+      "Approach_Road_Width",
+      "Adjacent_to_Metal_Road",
+      "Proposed_Land_use_Code",
+      "Proposed_Land_use_Name",
+      "Nature_Land_use_Code",
+      "Nature_Land_use_Name",
+      "Proposed_Apartment_use_Name",
+      "Nature_Apartment_use_name",
+      "Litigated_Property",
+      "Mouza_Type",
+      "Road_Category"
+    ],
+    "numeric_summary": {
+      "query_year": {
+        "count": 344079.0,
+        "mean": 2021.31607276236,
+        "median": 2022.0,
+        "min": 2015,
+        "max": 2026,
+        "std": 2.9017091341670773
+      },
+      "query_no": {
+        "count": 344079.0,
+        "mean": 1604570842.284388,
+        "median": 2000871555.0,
+        "min": 5,
+        "max": 8003683290,
+        "std": 1396362712.8496044
+      },
+      "Deed_No": {
+        "count": 344079.0,
+        "mean": 4668.008047570471,
+        "median": 4180.0,
+        "min": 1,
+        "max": 20193,
+        "std": 3195.183921428577
+      },
+      "Deed_Year": {
+        "count": 344079.0,
+        "mean": 2021.3522185312095,
+        "median": 2022.0,
+        "min": 1993,
+        "max": 2026,
+        "std": 2.9048471466923402
+      },
+      "Registration_district_code": {
+        "count": 344079.0,
+        "mean": 9.857919256914837,
+        "median": 5.0,
+        "min": 1,
+        "max": 23,
+        "std": 9.249464471684758
+      },
+      "Registration_RO_code": {
+        "count": 344079.0,
+        "mean": 4.0364858070385,
+        "median": 3.0,
+        "min": 1,
+        "max": 26,
+        "std": 2.1837560928323483
+      },
+      "Transaction_code": {
+        "count": 344079.0,
+        "mean": 232.45866501588299,
+        "median": 101.0,
+        "min": 101,
+        "max": 1401,
+        "std": 327.97711130163526
+      },
+      "Time_of_Presentation": {
+        "count": 186.0,
+        "mean": 14.458763440860215,
+        "median": 13.425,
+        "min": 9.0,
+        "max": 20.2,
+        "std": 2.63838301789992
+      },
+      "sl_no_Property": {
+        "count": 344079.0,
+        "mean": 4.465608188817103,
+        "median": 1.0,
+        "min": 0,
+        "max": 934,
+        "std": 17.938123639971895
+      },
+      "property_district_code": {
+        "count": 344079.0,
+        "mean": 9.568099186524025,
+        "median": 5.0,
+        "min": 2,
+        "max": 23,
+        "std": 9.221125865978125
+      },
+      "Property_Office_code": {
+        "count": 344079.0,
+        "mean": 3.949212244862372,
+        "median": 3.0,
+        "min": 3,
+        "max": 6,
+        "std": 1.3952198774114644
+      },
+      "ps_code": {
+        "count": 344079.0,
+        "mean": 9.091359833061594,
+        "median": 8.0,
+        "min": 1,
+        "max": 20,
+        "std": 7.60866159360244
+      },
+      "mouza_code": {
+        "count": 344079.0,
+        "mean": 47.95354264572961,
+        "median": 41.0,
+        "min": 1,
+        "max": 111,
+        "std": 30.996692733008484
+      },
+      "plot_no": {
+        "count": 344079.0,
+        "mean": 1416.8911499975297,
+        "median": 735.0,
+        "min": 1,
+        "max": 15512,
+        "std": 1742.0476901581571
+      },
+      "bata_plot_no": {
+        "count": 344079.0,
+        "mean": 75.44291863205834,
+        "median": 0.0,
+        "min": 0,
+        "max": 55216,
+        "std": 674.4881298370559
+      },
+      "premises": {
+        "count": 2347.0,
+        "mean": 1201.7533020877715,
+        "median": 320.0,
+        "min": 0.0,
+        "max": 713102.0,
+        "std": 25473.929551228888
+      },
+      "Road_code": {
+        "count": 333965.0,
+        "mean": 41.44374709924693,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 447.0,
+        "std": 86.99981680253497
+      },
+      "Zone_no": {
+        "count": 344079.0,
+        "mean": 0.19798941522150437,
+        "median": 0.0,
+        "min": 0,
+        "max": 5,
+        "std": 0.9180528387006075
+      },
+      "Special_project_Name": {
+        "count": 341435.0,
+        "mean": 492.46927526469165,
+        "median": 21.0,
+        "min": 0.0,
+        "max": 999.0,
+        "std": 498.38420457923394
+      },
+      "Approach_Road_Width": {
+        "count": 344014.0,
+        "mean": 27.431462992785168,
+        "median": 15.0,
+        "min": 0.0,
+        "max": 500000.0,
+        "std": 854.713318479759
+      },
+      "Proposed_Land_use_Code": {
+        "count": 183168.0,
+        "mean": 135.54701148672257,
+        "median": 16.0,
+        "min": 1.0,
+        "max": 905.0,
+        "std": 294.71328264207176
+      },
+      "Nature_Land_use_Code": {
+        "count": 183168.0,
+        "mean": 18.863955494409502,
+        "median": 5.0,
+        "min": 1.0,
+        "max": 905.0,
+        "std": 80.91584481667749
+      },
+      "Area": {
+        "count": 344079.0,
+        "mean": 352.5958442218209,
+        "median": 14.0,
+        "min": 1e-06,
+        "max": 177500.0,
+        "std": 2317.002672160007
+      },
+      "Sq ft": {
+        "count": 344079.0,
+        "mean": 1377.0513351528753,
+        "median": 686.0,
+        "min": 0.0004356,
+        "max": 1454468.4000000001,
+        "std": 6898.358260858778
+      },
+      "Market value per sq ft": {
+        "count": 344079.0,
+        "mean": 1886.539279515703,
+        "median": 1481.4814814814815,
+        "min": 0.0,
+        "max": 8014012.886204146,
+        "std": 28134.547756544365
+      },
+      "setforth_value": {
+        "count": 344079.0,
+        "mean": 1093834.1846872375,
+        "median": 230000.0,
+        "min": 0,
+        "max": 10000000000,
+        "std": 26048091.150147125
+      },
+      "market_value": {
+        "count": 344042.0,
+        "mean": 1923977.486894042,
+        "median": 484534.0,
+        "min": 1.0,
+        "max": 10000000000.0,
+        "std": 28277390.338080514
+      }
+    },
+    "outlier_summary": {
+      "market_value": {
+        "q1": 184680.0,
+        "q3": 2035000.0,
+        "iqr": 1850320.0,
+        "lower_bound": -2590800.0,
+        "upper_bound": 4810480.0,
+        "outlier_count": 11123
+      },
+      "setforth_value": {
+        "q1": 39141.0,
+        "q3": 1295000.0,
+        "iqr": 1255859.0,
+        "lower_bound": -1844647.5,
+        "upper_bound": 3178788.5,
+        "outlier_count": 16763
+      },
+      "Area": {
+        "q1": 1.572,
+        "q3": 527.645,
+        "iqr": 526.073,
+        "lower_bound": -787.5375,
+        "upper_bound": 1316.7545,
+        "outlier_count": 7022
+      }
+    },
+    "crs": null,
+    "geometry_type_counts": null,
+    "invalid_geometry_count": null,
+    "bounds": null
+  },
+  "property_layer": {
+    "dataset_name": "property_layer",
+    "dataset_type": "geospatial",
+    "row_count": 111497,
+    "column_count": 29,
+    "columns": [
+      "OBJECTID",
+      "BLOCK_CODE",
+      "BLOCK",
+      "PS_CODE",
+      "ps_name",
+      "Municipali",
+      "ADSR_OFFIC",
+      "JL_NO",
+      "moucode",
+      "idn",
+      "ENG_MOUNAM",
+      "mouza_type",
+      "LR_RS",
+      "SHEET_NO",
+      "GP",
+      "bata_no",
+      "hal_pt1",
+      "hal_pt2",
+      "sabek_pt1",
+      "sabek_pt2",
+      "CENT_LAT",
+      "CENT_LONG",
+      "Dist_name",
+      "Ward_No",
+      "SHAPE_Leng",
+      "SHAPE_Area",
+      "plot_no",
+      "dist_code",
+      "geometry"
+    ],
+    "dtypes": {
+      "OBJECTID": "int64",
+      "BLOCK_CODE": "object",
+      "BLOCK": "object",
+      "PS_CODE": "object",
+      "ps_name": "object",
+      "Municipali": "object",
+      "ADSR_OFFIC": "object",
+      "JL_NO": "object",
+      "moucode": "object",
+      "idn": "object",
+      "ENG_MOUNAM": "object",
+      "mouza_type": "object",
+      "LR_RS": "object",
+      "SHEET_NO": "object",
+      "GP": "object",
+      "bata_no": "object",
+      "hal_pt1": "object",
+      "hal_pt2": "object",
+      "sabek_pt1": "object",
+      "sabek_pt2": "object",
+      "CENT_LAT": "float64",
+      "CENT_LONG": "float64",
+      "Dist_name": "object",
+      "Ward_No": "object",
+      "SHAPE_Leng": "float64",
+      "SHAPE_Area": "float64",
+      "plot_no": "object",
+      "dist_code": "object",
+      "geometry": "geometry"
+    },
+    "missing_values": {
+      "Municipali": 60874,
+      "Ward_No": 55597,
+      "sabek_pt2": 53926,
+      "GP": 50644,
+      "SHEET_NO": 50644,
+      "idn": 50623,
+      "bata_no": 14409,
+      "sabek_pt1": 12608,
+      "hal_pt2": 7107,
+      "BLOCK": 4914,
+      "hal_pt1": 4617
+    },
+    "missing_percent": {
+      "Municipali": 54.6,
+      "Ward_No": 49.86,
+      "sabek_pt2": 48.37,
+      "GP": 45.42,
+      "SHEET_NO": 45.42,
+      "idn": 45.4,
+      "bata_no": 12.92,
+      "sabek_pt1": 11.31,
+      "hal_pt2": 6.37,
+      "BLOCK": 4.41,
+      "hal_pt1": 4.14
+    },
+    "duplicate_row_count": 0,
+    "candidate_join_keys": [
+      "BLOCK_CODE",
+      "PS_CODE",
+      "ps_name",
+      "moucode",
+      "mouza_type",
+      "Dist_name",
+      "plot_no",
+      "dist_code"
+    ],
+    "numeric_summary": {
+      "OBJECTID": {
+        "count": 111497.0,
+        "mean": 55749.0,
+        "median": 55749.0,
+        "min": 1,
+        "max": 111497,
+        "std": 32186.555819161516
+      },
+      "BLOCK_CODE": {
+        "count": 111497.0,
+        "mean": 3.651640851323354,
+        "median": 3.0,
+        "min": 1,
+        "max": 18,
+        "std": 3.586841727598133
+      },
+      "PS_CODE": {
+        "count": 111497.0,
+        "mean": 6.496668071786685,
+        "median": 8.0,
+        "min": 1,
+        "max": 20,
+        "std": 6.086682664359192
+      },
+      "JL_NO": {
+        "count": 111497.0,
+        "mean": 35.862238445877466,
+        "median": 30.0,
+        "min": 1,
+        "max": 111,
+        "std": 26.505148678976706
+      },
+      "moucode": {
+        "count": 111497.0,
+        "mean": 35.862238445877466,
+        "median": 30.0,
+        "min": 1,
+        "max": 111,
+        "std": 26.505148678976706
+      },
+      "idn": {
+        "count": 60874.0,
+        "mean": 930885.1062686861,
+        "median": 505016.0,
+        "min": 504001.0,
+        "max": 2311107.0,
+        "std": 765626.6737082088
+      },
+      "SHEET_NO": {
+        "count": 60749.0,
+        "mean": 1.4040231114915471,
+        "median": 1.0,
+        "min": 0.0,
+        "max": 8.0,
+        "std": 1.417478635821714
+      },
+      "bata_no": {
+        "count": 97088.0,
+        "mean": 197.61954103493738,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 15604.0,
+        "std": 797.9339983085354
+      },
+      "hal_pt1": {
+        "count": 106879.0,
+        "mean": 2384.0641566631425,
+        "median": 1554.0,
+        "min": 0.0,
+        "max": 27889.0,
+        "std": 2578.9598994047346
+      },
+      "hal_pt2": {
+        "count": 104390.0,
+        "mean": 40.459555512980174,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 15604.0,
+        "std": 399.6985222934366
+      },
+      "sabek_pt1": {
+        "count": 98889.0,
+        "mean": 4189.060259482854,
+        "median": 1010.0,
+        "min": 0.0,
+        "max": 121881722.0,
+        "std": 451081.19448990276
+      },
+      "sabek_pt2": {
+        "count": 57571.0,
+        "mean": 59.78970314915496,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 5726.0,
+        "std": 406.8367930990785
+      },
+      "CENT_LAT": {
+        "count": 111497.0,
+        "mean": 22.99531054617606,
+        "median": 23.2294490107,
+        "min": 22.5244876256,
+        "max": 23.5488487223,
+        "std": 0.373286655212442
+      },
+      "CENT_LONG": {
+        "count": 111497.0,
+        "mean": 87.92323446719162,
+        "median": 87.8694575057,
+        "min": 87.3188459954,
+        "max": 88.235124971,
+        "std": 0.263263681359618
+      },
+      "Ward_No": {
+        "count": 55900.0,
+        "mean": 19.364561717352416,
+        "median": 22.0,
+        "min": 1.0,
+        "max": 35.0,
+        "std": 9.419579886912528
+      },
+      "SHAPE_Leng": {
+        "count": 111497.0,
+        "mean": 0.0012244399739655154,
+        "median": 0.000802255171351,
+        "min": 2.65981663277e-07,
+        "max": 0.0434519565333,
+        "std": 0.0016738813303220676
+      },
+      "SHAPE_Area": {
+        "count": 111497.0,
+        "mean": 1.1174226365909892e-07,
+        "median": 3.0870916005e-08,
+        "min": 1.11950053697e-15,
+        "max": 4.54718050807e-05,
+        "std": 7.238085554785149e-07
+      },
+      "plot_no": {
+        "count": 111496.0,
+        "mean": 2262.2869161225517,
+        "median": 1310.0,
+        "min": 0.0,
+        "max": 15515.0,
+        "std": 2568.163463979068
+      },
+      "dist_code": {
+        "count": 111497.0,
+        "mean": 5.964088719875871,
+        "median": 5.0,
+        "min": 2,
+        "max": 23,
+        "std": 6.710322898921101
+      }
+    },
+    "outlier_summary": {},
+    "crs": "EPSG:4326",
+    "geometry_type_counts": {
+      "Polygon": 111255,
+      "MultiPolygon": 242
+    },
+    "invalid_geometry_count": 27,
+    "bounds": {
+      "minx": 87.31461443900008,
+      "miny": 22.524414345000025,
+      "maxx": 88.23524627300009,
+      "maxy": 23.54926189300005
+    }
+  },
+  "road_layer": {
+    "dataset_name": "road_layer",
+    "dataset_type": "geospatial",
+    "row_count": 10345,
+    "column_count": 10,
+    "columns": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "R_NAME",
+      "R_CATG",
+      "R_WIDTH",
+      "R_TOP_MAT",
+      "Shape_Leng",
+      "Shape_Le_1",
+      "adsr_jur",
+      "geometry"
+    ],
+    "dtypes": {
+      "OBJECTID_1": "int64",
+      "OBJECTID": "int64",
+      "R_NAME": "object",
+      "R_CATG": "object",
+      "R_WIDTH": "float64",
+      "R_TOP_MAT": "object",
+      "Shape_Leng": "float64",
+      "Shape_Le_1": "float64",
+      "adsr_jur": "object",
+      "geometry": "geometry"
+    },
+    "missing_values": {
+      "R_NAME": 9872
+    },
+    "missing_percent": {
+      "R_NAME": 95.43
+    },
+    "duplicate_row_count": 0,
+    "candidate_join_keys": [
+      "R_NAME"
+    ],
+    "numeric_summary": {
+      "OBJECTID_1": {
+        "count": 10345.0,
+        "mean": 5173.0,
+        "median": 5173.0,
+        "min": 1,
+        "max": 10345,
+        "std": 2986.4886014627054
+      },
+      "OBJECTID": {
+        "count": 10345.0,
+        "mean": 19845.6726921218,
+        "median": 20621.0,
+        "min": 3508,
+        "max": 73162,
+        "std": 6447.340219351963
+      },
+      "R_WIDTH": {
+        "count": 10345.0,
+        "mean": 3.5910584823586276,
+        "median": 3.0,
+        "min": 1.5,
+        "max": 50.0,
+        "std": 3.0142213019287394
+      },
+      "Shape_Leng": {
+        "count": 10345.0,
+        "mean": 102.60516775081392,
+        "median": 70.1329584624,
+        "min": 0.0892395645402,
+        "max": 3442.92109988,
+        "std": 129.5972228154507
+      },
+      "Shape_Le_1": {
+        "count": 10345.0,
+        "mean": 96.211945322828,
+        "median": 66.8134287013,
+        "min": 0.0640740196088,
+        "max": 2691.93727331,
+        "std": 111.40820823783828
+      }
+    },
+    "outlier_summary": {},
+    "crs": "EPSG:32645",
+    "geometry_type_counts": {
+      "LineString": 10298,
+      "MultiLineString": 47
+    },
+    "invalid_geometry_count": 0,
+    "bounds": {
+      "minx": 532147.0055999998,
+      "miny": 2491316.409499999,
+      "maxx": 626955.4446,
+      "maxy": 2604357.956599999
+    }
+  },
+  "facilities_layer": {
+    "dataset_name": "facilities_layer",
+    "dataset_type": "geospatial",
+    "row_count": 238,
+    "column_count": 21,
+    "columns": [
+      "OBJECTID",
+      "Survey_Id",
+      "Report_Dat",
+      "State_Name",
+      "District_N",
+      "Block__ULB",
+      "Police_Sta",
+      "GP_Ward",
+      "Facility_T",
+      "Survey_Poi",
+      "Brief_Desc",
+      "Geo_Latitu",
+      "Geo_Longit",
+      "Geo_Locati",
+      "Reporting",
+      "Report_D_1",
+      "Survey_Use",
+      "Designatio",
+      "Email_Id",
+      "Office_Nam",
+      "geometry"
+    ],
+    "dtypes": {
+      "OBJECTID": "int64",
+      "Survey_Id": "object",
+      "Report_Dat": "datetime64[ms]",
+      "State_Name": "object",
+      "District_N": "object",
+      "Block__ULB": "object",
+      "Police_Sta": "object",
+      "GP_Ward": "object",
+      "Facility_T": "object",
+      "Survey_Poi": "object",
+      "Brief_Desc": "object",
+      "Geo_Latitu": "float64",
+      "Geo_Longit": "float64",
+      "Geo_Locati": "object",
+      "Reporting": "float64",
+      "Report_D_1": "datetime64[ms]",
+      "Survey_Use": "object",
+      "Designatio": "object",
+      "Email_Id": "object",
+      "Office_Nam": "object",
+      "geometry": "geometry"
+    },
+    "missing_values": {
+      "Email_Id": 238
+    },
+    "missing_percent": {
+      "Email_Id": 100.0
+    },
+    "duplicate_row_count": 0,
+    "candidate_join_keys": [
+      "State_Name",
+      "District_N",
+      "Office_Nam"
+    ],
+    "numeric_summary": {
+      "OBJECTID": {
+        "count": 238.0,
+        "mean": 119.5,
+        "median": 119.5,
+        "min": 1,
+        "max": 238,
+        "std": 68.84886830345629
+      },
+      "Geo_Latitu": {
+        "count": 238.0,
+        "mean": 22.98736878109244,
+        "median": 23.2261429,
+        "min": 22.5318583,
+        "max": 23.5453827,
+        "std": 0.3628904432853677
+      },
+      "Geo_Longit": {
+        "count": 238.0,
+        "mean": 87.94986461932771,
+        "median": 87.86752345,
+        "min": 87.32659,
+        "max": 88.2346768,
+        "std": 0.2518249157439289
+      },
+      "Reporting": {
+        "count": 238.0,
+        "mean": 8142407961.899159,
+        "median": 8640936621.0,
+        "min": 6294148214.0,
+        "max": 9874129592.0,
+        "std": 1325568187.299187
+      }
+    },
+    "outlier_summary": {},
+    "crs": "EPSG:4326",
+    "geometry_type_counts": {
+      "Point": 238
+    },
+    "invalid_geometry_count": 0,
+    "bounds": {
+      "minx": 87.32659000000007,
+      "miny": 22.531858300000067,
+      "maxx": 88.23467680000005,
+      "maxy": 23.54538270000012
+    }
+  }
+}

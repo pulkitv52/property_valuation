@@ -1,0 +1,582 @@
+[
+  {
+    "identifiers": {
+      "query_year": 2024,
+      "query_no": 2001123134,
+      "Deed_No": 2952,
+      "Deed_Year": 2024,
+      "sl_no_Property": 1,
+      "property_district_Name": "Purba Bardhaman",
+      "ps_code": 1,
+      "mouza_code": 31,
+      "plot_no": 380,
+      "bata_plot_no": 0
+    },
+    "segment_value": "Flat",
+    "explanation_method": "xgboost_pred_contrib",
+    "predicted_value_per_area": 3007.7822121301915,
+    "actual_value_per_area": 9950.000000000007,
+    "prediction_bias_log_target": 7.833752155303955,
+    "top_positive_factors": [
+      {
+        "base_feature": "Mouza_Name_target_mean",
+        "contribution_log_target": 0.10548412799835205,
+        "reason": "mouza pricing context (Alamganj)"
+      },
+      {
+        "base_feature": "property_district_Name_target_mean",
+        "contribution_log_target": 0.08547956496477127,
+        "reason": "district pricing context (Purba Bardhaman)"
+      },
+      {
+        "base_feature": "presentation_year",
+        "contribution_log_target": 0.0754016563296318,
+        "reason": "presentation_year=2024"
+      },
+      {
+        "base_feature": "registration_year",
+        "contribution_log_target": 0.06485635787248611,
+        "reason": "registration_year=2024"
+      },
+      {
+        "base_feature": "Mouza_Name",
+        "contribution_log_target": 0.037099022418260574,
+        "reason": "local mouza context (Alamganj)"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "base_feature": "Area",
+        "contribution_log_target": -0.16233795881271362,
+        "reason": "property area (135.0)"
+      },
+      {
+        "base_feature": "Road_Name_target_mean",
+        "contribution_log_target": -0.06312427669763565,
+        "reason": "road-level pricing context (Saraitikar Road)"
+      },
+      {
+        "base_feature": "presentation_month",
+        "contribution_log_target": -0.015134375542402267,
+        "reason": "presentation_month=5"
+      },
+      {
+        "base_feature": "property_district_Name",
+        "contribution_log_target": -0.010035259649157524,
+        "reason": "property_district_Name=Purba Bardhaman"
+      },
+      {
+        "base_feature": "Road_code_target_mean",
+        "contribution_log_target": -0.008516073226928711,
+        "reason": "road-code pricing context (0134)"
+      }
+    ],
+    "global_top_features": [
+      {
+        "base_feature": "Road_Name_target_mean",
+        "importance": 0.09512482024729252
+      },
+      {
+        "base_feature": "property_district_Name_target_mean",
+        "importance": 0.044114197604358196
+      },
+      {
+        "base_feature": "Road_code_target_mean",
+        "importance": 0.03651304543018341
+      },
+      {
+        "base_feature": "PS_Name_target_mean",
+        "importance": 0.033623949624598026
+      },
+      {
+        "base_feature": "Adjacent_to_Metal_Road_flag",
+        "importance": 0.02462327480316162
+      },
+      {
+        "base_feature": "Area",
+        "importance": 0.020752725657075644
+      },
+      {
+        "base_feature": "Mouza_Name_target_mean",
+        "importance": 0.016316376626491547
+      },
+      {
+        "base_feature": "Approach_Road_Width",
+        "importance": 0.016113097313791513
+      },
+      {
+        "base_feature": "PS_Name",
+        "importance": 0.007801398407900706
+      },
+      {
+        "base_feature": "presentation_year",
+        "importance": 0.007180143613368273
+      }
+    ],
+    "plain_language_summary": "Predicted value is influenced mainly by mouza pricing context (Alamganj), district pricing context (Purba Bardhaman), presentation_year=2024. Downward pressure comes from property area (135.0), road-level pricing context (Saraitikar Road)."
+  },
+  {
+    "identifiers": {
+      "query_year": 2023,
+      "query_no": 2001680603,
+      "Deed_No": 6027,
+      "Deed_Year": 2023,
+      "sl_no_Property": 23,
+      "property_district_Name": "Purba Bardhaman",
+      "ps_code": 1,
+      "mouza_code": 75,
+      "plot_no": 16,
+      "bata_plot_no": 0
+    },
+    "segment_value": "Flat",
+    "explanation_method": "xgboost_pred_contrib",
+    "predicted_value_per_area": 2789.7238400468586,
+    "actual_value_per_area": 9677.419354838703,
+    "prediction_bias_log_target": 7.833752155303955,
+    "top_positive_factors": [
+      {
+        "base_feature": "Area",
+        "contribution_log_target": 0.34290140867233276,
+        "reason": "property area (155.0)"
+      },
+      {
+        "base_feature": "presentation_year",
+        "contribution_log_target": 0.04010280221700668,
+        "reason": "presentation_year=2023"
+      },
+      {
+        "base_feature": "Mouza_Name",
+        "contribution_log_target": 0.026522576808929443,
+        "reason": "local mouza context (Ichhlabad)"
+      },
+      {
+        "base_feature": "Mouza_Name_target_mean",
+        "contribution_log_target": 0.021354002878069878,
+        "reason": "mouza pricing context (Ichhlabad)"
+      },
+      {
+        "base_feature": "property_district_Name_target_mean",
+        "contribution_log_target": 0.01744214817881584,
+        "reason": "district pricing context (Purba Bardhaman)"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "base_feature": "property_district_Name",
+        "contribution_log_target": -0.11673583835363388,
+        "reason": "property_district_Name=Purba Bardhaman"
+      },
+      {
+        "base_feature": "Road_Name_target_mean",
+        "contribution_log_target": -0.10377565771341324,
+        "reason": "road-level pricing context (Anita Cinema Lane)"
+      },
+      {
+        "base_feature": "Road_code_target_mean",
+        "contribution_log_target": -0.08354200422763824,
+        "reason": "road-code pricing context (0010)"
+      },
+      {
+        "base_feature": "Road_code",
+        "contribution_log_target": -0.05654750391840935,
+        "reason": "road-code locality context (0010)"
+      },
+      {
+        "base_feature": "registration_year",
+        "contribution_log_target": -0.014294782653450966,
+        "reason": "registration_year=2023"
+      }
+    ],
+    "global_top_features": [
+      {
+        "base_feature": "Road_Name_target_mean",
+        "importance": 0.09512482024729252
+      },
+      {
+        "base_feature": "property_district_Name_target_mean",
+        "importance": 0.044114197604358196
+      },
+      {
+        "base_feature": "Road_code_target_mean",
+        "importance": 0.03651304543018341
+      },
+      {
+        "base_feature": "PS_Name_target_mean",
+        "importance": 0.033623949624598026
+      },
+      {
+        "base_feature": "Adjacent_to_Metal_Road_flag",
+        "importance": 0.02462327480316162
+      },
+      {
+        "base_feature": "Area",
+        "importance": 0.020752725657075644
+      },
+      {
+        "base_feature": "Mouza_Name_target_mean",
+        "importance": 0.016316376626491547
+      },
+      {
+        "base_feature": "Approach_Road_Width",
+        "importance": 0.016113097313791513
+      },
+      {
+        "base_feature": "PS_Name",
+        "importance": 0.007801398407900706
+      },
+      {
+        "base_feature": "presentation_year",
+        "importance": 0.007180143613368273
+      }
+    ],
+    "plain_language_summary": "Predicted value is influenced mainly by property area (155.0), presentation_year=2023, local mouza context (Ichhlabad). Downward pressure comes from property_district_Name=Purba Bardhaman, road-level pricing context (Anita Cinema Lane)."
+  },
+  {
+    "identifiers": {
+      "query_year": 2015,
+      "query_no": 1000259473,
+      "Deed_No": 3643,
+      "Deed_Year": 2015,
+      "sl_no_Property": 8,
+      "property_district_Name": "Howrah",
+      "ps_code": 8,
+      "mouza_code": 25,
+      "plot_no": 249,
+      "bata_plot_no": 0
+    },
+    "segment_value": "Land",
+    "explanation_method": "xgboost_pred_contrib",
+    "predicted_value_per_area": 433.33300437380365,
+    "actual_value_per_area": 433.33388222393404,
+    "prediction_bias_log_target": 5.946964263916016,
+    "top_positive_factors": [
+      {
+        "base_feature": "Adjacent_to_Metal_Road_flag",
+        "contribution_log_target": 0.20846155285835266,
+        "reason": "Adjacent_to_Metal_Road_flag=0.0"
+      },
+      {
+        "base_feature": "registration_year",
+        "contribution_log_target": 0.20294010639190674,
+        "reason": "registration_year=2015"
+      },
+      {
+        "base_feature": "presentation_year",
+        "contribution_log_target": 0.07976513355970383,
+        "reason": "presentation_year=2015"
+      },
+      {
+        "base_feature": "Area",
+        "contribution_log_target": 0.05087985843420029,
+        "reason": "property area (393.52104)"
+      },
+      {
+        "base_feature": "Approach_Road_Width",
+        "contribution_log_target": 0.04810421168804169,
+        "reason": "Approach_Road_Width=9.0"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "base_feature": "Road_Name_target_mean",
+        "contribution_log_target": -0.1991882026195526,
+        "reason": "road-level pricing context (<NA>)"
+      },
+      {
+        "base_feature": "Mouza_Name_target_mean",
+        "contribution_log_target": -0.184696227312088,
+        "reason": "mouza pricing context (Dhamsiya)"
+      },
+      {
+        "base_feature": "property_district_Name_target_mean",
+        "contribution_log_target": -0.09370414167642593,
+        "reason": "district pricing context (Howrah)"
+      },
+      {
+        "base_feature": "latitude",
+        "contribution_log_target": -0.0409245640039444,
+        "reason": "latitude=22.54180582302817"
+      },
+      {
+        "base_feature": "Transaction_Name",
+        "contribution_log_target": -0.03715307265520096,
+        "reason": "Transaction_Name=[0201] Gift, Gift  in Favour of family members"
+      }
+    ],
+    "global_top_features": [
+      {
+        "base_feature": "Road_Name_target_mean",
+        "importance": 0.09512482024729252
+      },
+      {
+        "base_feature": "property_district_Name_target_mean",
+        "importance": 0.044114197604358196
+      },
+      {
+        "base_feature": "Road_code_target_mean",
+        "importance": 0.03651304543018341
+      },
+      {
+        "base_feature": "PS_Name_target_mean",
+        "importance": 0.033623949624598026
+      },
+      {
+        "base_feature": "Adjacent_to_Metal_Road_flag",
+        "importance": 0.02462327480316162
+      },
+      {
+        "base_feature": "Area",
+        "importance": 0.020752725657075644
+      },
+      {
+        "base_feature": "Mouza_Name_target_mean",
+        "importance": 0.016316376626491547
+      },
+      {
+        "base_feature": "Approach_Road_Width",
+        "importance": 0.016113097313791513
+      },
+      {
+        "base_feature": "PS_Name",
+        "importance": 0.007801398407900706
+      },
+      {
+        "base_feature": "presentation_year",
+        "importance": 0.007180143613368273
+      }
+    ],
+    "plain_language_summary": "Predicted value is influenced mainly by Adjacent_to_Metal_Road_flag=0.0, registration_year=2015, presentation_year=2015. Downward pressure comes from road-level pricing context (<NA>), mouza pricing context (Dhamsiya)."
+  },
+  {
+    "identifiers": {
+      "query_year": 2020,
+      "query_no": 324625,
+      "Deed_No": 1557,
+      "Deed_Year": 2020,
+      "sl_no_Property": 1,
+      "property_district_Name": "Purba Bardhaman",
+      "ps_code": 1,
+      "mouza_code": 41,
+      "plot_no": 2603,
+      "bata_plot_no": 0
+    },
+    "segment_value": "Land",
+    "explanation_method": "xgboost_pred_contrib",
+    "predicted_value_per_area": 237.6039055730162,
+    "actual_value_per_area": 237.60330578512387,
+    "prediction_bias_log_target": 5.946964263916016,
+    "top_positive_factors": [
+      {
+        "base_feature": "Adjacent_to_Metal_Road_flag",
+        "contribution_log_target": 0.19516585767269135,
+        "reason": "Adjacent_to_Metal_Road_flag=0.0"
+      },
+      {
+        "base_feature": "Nature_Land_use_Code",
+        "contribution_log_target": 0.07393230497837067,
+        "reason": "current land-use code (003)"
+      },
+      {
+        "base_feature": "Nature_Land_use_Name",
+        "contribution_log_target": 0.06519266963005066,
+        "reason": "Nature_Land_use_Name=Shuna"
+      },
+      {
+        "base_feature": "registration_presentation_gap_days",
+        "contribution_log_target": 0.04221584275364876,
+        "reason": "registration_presentation_gap_days=0.5228994212962963"
+      },
+      {
+        "base_feature": "longitude",
+        "contribution_log_target": 0.041513651609420776,
+        "reason": "longitude=87.84118451616055"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "base_feature": "Area",
+        "contribution_log_target": -0.3354038894176483,
+        "reason": "property area (3049.2000000000003)"
+      },
+      {
+        "base_feature": "Road_Name_target_mean",
+        "contribution_log_target": -0.22462260723114014,
+        "reason": "road-level pricing context (<NA>)"
+      },
+      {
+        "base_feature": "Approach_Road_Width",
+        "contribution_log_target": -0.052932221442461014,
+        "reason": "Approach_Road_Width=0.0"
+      },
+      {
+        "base_feature": "Road_code_target_mean",
+        "contribution_log_target": -0.039910390973091125,
+        "reason": "road-code pricing context (0000)"
+      },
+      {
+        "base_feature": "Road_Name",
+        "contribution_log_target": -0.03837744891643524,
+        "reason": "road-level locality context (<NA>)"
+      }
+    ],
+    "global_top_features": [
+      {
+        "base_feature": "Road_Name_target_mean",
+        "importance": 0.09512482024729252
+      },
+      {
+        "base_feature": "property_district_Name_target_mean",
+        "importance": 0.044114197604358196
+      },
+      {
+        "base_feature": "Road_code_target_mean",
+        "importance": 0.03651304543018341
+      },
+      {
+        "base_feature": "PS_Name_target_mean",
+        "importance": 0.033623949624598026
+      },
+      {
+        "base_feature": "Adjacent_to_Metal_Road_flag",
+        "importance": 0.02462327480316162
+      },
+      {
+        "base_feature": "Area",
+        "importance": 0.020752725657075644
+      },
+      {
+        "base_feature": "Mouza_Name_target_mean",
+        "importance": 0.016316376626491547
+      },
+      {
+        "base_feature": "Approach_Road_Width",
+        "importance": 0.016113097313791513
+      },
+      {
+        "base_feature": "PS_Name",
+        "importance": 0.007801398407900706
+      },
+      {
+        "base_feature": "presentation_year",
+        "importance": 0.007180143613368273
+      }
+    ],
+    "plain_language_summary": "Predicted value is influenced mainly by Adjacent_to_Metal_Road_flag=0.0, current land-use code (003), Nature_Land_use_Name=Shuna. Downward pressure comes from property area (3049.2000000000003), road-level pricing context (<NA>)."
+  },
+  {
+    "identifiers": {
+      "query_year": 2021,
+      "query_no": 2000120554,
+      "Deed_No": 408,
+      "Deed_Year": 2021,
+      "sl_no_Property": 1,
+      "property_district_Name": "Paschim Bardhaman",
+      "ps_code": 19,
+      "mouza_code": 58,
+      "plot_no": 687,
+      "bata_plot_no": 0
+    },
+    "segment_value": "Flat",
+    "explanation_method": "xgboost_pred_contrib",
+    "predicted_value_per_area": 4458.934022347155,
+    "actual_value_per_area": 4505.14087301587,
+    "prediction_bias_log_target": 7.833752155303955,
+    "top_positive_factors": [
+      {
+        "base_feature": "Area",
+        "contribution_log_target": 0.4016530215740204,
+        "reason": "property area (504.0)"
+      },
+      {
+        "base_feature": "property_district_Name",
+        "contribution_log_target": 0.14070028066635132,
+        "reason": "property_district_Name=Paschim Bardhaman"
+      },
+      {
+        "base_feature": "Mouza_Name_target_mean",
+        "contribution_log_target": 0.025249885395169258,
+        "reason": "mouza pricing context (Bamunara)"
+      },
+      {
+        "base_feature": "registration_year",
+        "contribution_log_target": 0.02407943829894066,
+        "reason": "registration_year=2021"
+      },
+      {
+        "base_feature": "property_district_Name_target_mean",
+        "contribution_log_target": 0.01907832734286785,
+        "reason": "district pricing context (Paschim Bardhaman)"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "base_feature": "Road_Name_target_mean",
+        "contribution_log_target": -0.0499921590089798,
+        "reason": "road-level pricing context (<NA>)"
+      },
+      {
+        "base_feature": "nearest_road_width",
+        "contribution_log_target": -0.0062320781871676445,
+        "reason": "nearest road width"
+      },
+      {
+        "base_feature": "latitude",
+        "contribution_log_target": -0.004367772489786148,
+        "reason": "latitude=23.51219377446821"
+      },
+      {
+        "base_feature": "Road_code_target_mean",
+        "contribution_log_target": -0.004343877080827951,
+        "reason": "road-code pricing context (0000)"
+      },
+      {
+        "base_feature": "Approach_Road_Width",
+        "contribution_log_target": -0.0036359094083309174,
+        "reason": "Approach_Road_Width=20.0"
+      }
+    ],
+    "global_top_features": [
+      {
+        "base_feature": "Road_Name_target_mean",
+        "importance": 0.09512482024729252
+      },
+      {
+        "base_feature": "property_district_Name_target_mean",
+        "importance": 0.044114197604358196
+      },
+      {
+        "base_feature": "Road_code_target_mean",
+        "importance": 0.03651304543018341
+      },
+      {
+        "base_feature": "PS_Name_target_mean",
+        "importance": 0.033623949624598026
+      },
+      {
+        "base_feature": "Adjacent_to_Metal_Road_flag",
+        "importance": 0.02462327480316162
+      },
+      {
+        "base_feature": "Area",
+        "importance": 0.020752725657075644
+      },
+      {
+        "base_feature": "Mouza_Name_target_mean",
+        "importance": 0.016316376626491547
+      },
+      {
+        "base_feature": "Approach_Road_Width",
+        "importance": 0.016113097313791513
+      },
+      {
+        "base_feature": "PS_Name",
+        "importance": 0.007801398407900706
+      },
+      {
+        "base_feature": "presentation_year",
+        "importance": 0.007180143613368273
+      }
+    ],
+    "plain_language_summary": "Predicted value is influenced mainly by property area (504.0), property_district_Name=Paschim Bardhaman, mouza pricing context (Bamunara). Downward pressure comes from road-level pricing context (<NA>), nearest road width."
+  }
+]

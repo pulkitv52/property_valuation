@@ -1,0 +1,66 @@
+{
+  "date": "2026-04-29",
+  "high_priority": [
+    "Date_of_Registration",
+    "Date_of_presentation",
+    "Time_of_Presentation",
+    "Transaction_code",
+    "Transaction_Name",
+    "Road_code",
+    "Is_Property_on_Road",
+    "Adjacent_to_Metal_Road",
+    "GP",
+    "Nature_Land_use_Code",
+    "Proposed_Land_use_Code"
+  ],
+  "medium_priority": [
+    "Mouza_Type",
+    "Special_project_Name",
+    "bargadar",
+    "whether_tenant_purchaser",
+    "is_bargadar_purchaser",
+    "Ward_No",
+    "BLOCK",
+    "BLOCK_CODE",
+    "ps_name",
+    "ENG_MOUNAM"
+  ],
+  "low_priority_or_skip": [
+    "plot_no_norm",
+    "mouza_code_norm",
+    "ps_code_norm",
+    "district_name_norm",
+    "SHAPE_Area",
+    "SHAPE_Leng",
+    "book",
+    "Area_type",
+    "Types of area Measurement",
+    "Property_Office_code",
+    "Municipali",
+    "premises"
+  ],
+  "road_layer_candidates": [
+    "adsr_jur"
+  ],
+  "facility_layer_candidates": [
+    "Survey_Use",
+    "Office_Nam",
+    "Block__ULB",
+    "Police_Sta",
+    "GP_Ward",
+    "Brief_Desc"
+  ],
+  "recommended_next_batch": [
+    "Transaction_code",
+    "Transaction_Name",
+    "Date_of_Registration",
+    "Date_of_presentation",
+    "Time_of_Presentation",
+    "Road_code",
+    "Is_Property_on_Road",
+    "Adjacent_to_Metal_Road",
+    "GP",
+    "Nature_Land_use_Code",
+    "Proposed_Land_use_Code"
+  ]
+}

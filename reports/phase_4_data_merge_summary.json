@@ -1,0 +1,16 @@
+{
+  "transaction_input_rows": 297437,
+  "property_input_rows": 111497,
+  "property_unique_merge_keys": 93775,
+  "property_duplicate_merge_key_rows": 25532,
+  "matched_transaction_rows": 225872,
+  "unmatched_transaction_rows": 71565,
+  "match_coverage_percent": 75.94,
+  "output_rows": 297437,
+  "merge_key_columns": [
+    "district_name_norm",
+    "ps_code_norm",
+    "mouza_code_norm",
+    "plot_no_norm"
+  ]
+}

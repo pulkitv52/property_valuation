@@ -1,0 +1,35 @@
+{
+  "status": "waiting_for_mvdb_data",
+  "mvdb_data_available": false,
+  "mvdb_path": null,
+  "expected_join_columns": [
+    "query_year",
+    "query_no",
+    "Deed_No",
+    "Deed_Year",
+    "sl_no_Property",
+    "property_district_Name",
+    "ps_code",
+    "mouza_code",
+    "plot_no",
+    "bata_plot_no"
+  ],
+  "expected_value_columns": [
+    "mvdb_value",
+    "circle_rate_value",
+    "guideline_value",
+    "government_valuation"
+  ],
+  "comparison_row_count": 0,
+  "matched_mvdb_rows": 0,
+  "ai_mae_market_value": null,
+  "mvdb_mae_market_value": null,
+  "ai_mape_market_value": null,
+  "mvdb_mape_market_value": null,
+  "better_system_by_mae": null,
+  "notes": [
+    "MVDB or circle-rate data is not currently available in the data folder.",
+    "Provide a CSV, Excel, or Parquet file and set MVDB_FILE in .env to activate Phase 10 comparison.",
+    "The comparison utility expects a government valuation column plus stable join identifiers."
+  ]
+}

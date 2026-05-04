@@ -1,0 +1,5 @@
+{
+  "python.condaPath": "/home/pulkitv52/miniconda3/bin/conda",
+  "python.defaultInterpreterPath": "/home/pulkitv52/miniconda3/envs/valuation-poc/bin/python",
+  "jupyter.jupyterServerType": "local"
+}

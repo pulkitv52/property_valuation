@@ -1,0 +1,463 @@
+{
+  "summary": {
+    "input_row_count": 273587,
+    "rows_with_geometry": 207442,
+    "target_non_null_count": 273587,
+    "target_mean": 323860.9304965475,
+    "target_median": 75757.57575757576,
+    "target_p90": 565655.742884576,
+    "target_p95": 733332.926724138,
+    "target_p99": 1636364.2568594534,
+    "target_skewness": 195.85637875185512,
+    "zero_or_negative_target_rows": 0,
+    "major_findings": [
+      "Target value_per_area is heavily right-skewed; segmentation or robust handling may still help.",
+      "Target distribution has a very heavy tail relative to the median.",
+      "66145 rows still lack parcel geometry-derived spatial features.",
+      "Target medians vary materially across Flat_or_Land; segmented modeling may help.",
+      "Target medians vary materially across Urban; segmented modeling may help.",
+      "Target medians vary materially across Rural; segmented modeling may help.",
+      "Target medians vary materially across Transaction_code; segmented modeling may help."
+    ]
+  },
+  "tables": {
+    "target_by_flat_or_land": [
+      {
+        "Flat_or_Land": "Land",
+        "count": 183133,
+        "mean": 482434.5252595932,
+        "median": 156136.13652925598
+      },
+      {
+        "Flat_or_Land": "Flat",
+        "count": 90454,
+        "mean": 2813.1257588816015,
+        "median": 2430.0
+      }
+    ],
+    "target_by_urban": [
+      {
+        "Urban": "No",
+        "count": 204102,
+        "mean": 284866.4134631581,
+        "median": 64400.0
+      },
+      {
+        "Urban": "Yes",
+        "count": 69485,
+        "mean": 438401.6071252998,
+        "median": 381818.0
+      }
+    ],
+    "target_by_rural": [
+      {
+        "Rural": "Yes",
+        "count": 204102,
+        "mean": 284866.4134631581,
+        "median": 64400.0
+      },
+      {
+        "Rural": "No",
+        "count": 69485,
+        "mean": 438401.6071252998,
+        "median": 381818.0
+      }
+    ],
+    "target_by_transaction_code": [
+      {
+        "Transaction_code": "101",
+        "count": 162908,
+        "mean": 193883.22054198603,
+        "median": 71428.57142857142
+      },
+      {
+        "Transaction_code": "201",
+        "count": 42137,
+        "mean": 278584.8967179723,
+        "median": 128000.0
+      },
+      {
+        "Transaction_code": "1210",
+        "count": 14142,
+        "mean": 85102.55383886512,
+        "median": 2448.0
+      },
+      {
+        "Transaction_code": "1401",
+        "count": 8600,
+        "mean": 173050.72046370822,
+        "median": 79200.0
+      },
+      {
+        "Transaction_code": "204",
+        "count": 5183,
+        "mean": 214023.17314872,
+        "median": 101666.66666666667
+      },
+      {
+        "Transaction_code": "1201",
+        "count": 3993,
+        "mean": 247113.459659073,
+        "median": 3794.871794871795
+      },
+      {
+        "Transaction_code": "104",
+        "count": 3912,
+        "mean": 111287.6752758453,
+        "median": 2962.962962962963
+      },
+      {
+        "Transaction_code": "110",
+        "count": 3759,
+        "mean": 571071.5318039084,
+        "median": 375000.0
+      },
+      {
+        "Transaction_code": "207",
+        "count": 3663,
+        "mean": 230902.70112375618,
+        "median": 100000.0
+      },
+      {
+        "Transaction_code": "105",
+        "count": 3621,
+        "mean": 100572.73103657163,
+        "median": 3148.0
+      },
+      {
+        "Transaction_code": "403",
+        "count": 2973,
+        "mean": 180279.6029377872,
+        "median": 55652.0
+      },
+      {
+        "Transaction_code": "138",
+        "count": 2664,
+        "mean": 506768.6562301353,
+        "median": 333332.9764262753
+      },
+      {
+        "Transaction_code": "501",
+        "count": 2556,
+        "mean": 397418.5652131207,
+        "median": 287878.9163246594
+      },
+      {
+        "Transaction_code": "307",
+        "count": 2376,
+        "mean": 9333042.90998306,
+        "median": 194375.0
+      },
+      {
+        "Transaction_code": "901",
+        "count": 1657,
+        "mean": 231856.43649182376,
+        "median": 117000.0
+      }
+    ],
+    "target_by_zone": [
+      {
+        "Zone_no": "0",
+        "count": 262726,
+        "mean": 322839.8819621394,
+        "median": 80000.0
+      },
+      {
+        "Zone_no": "1",
+        "count": 4321,
+        "mean": 234518.74892577872,
+        "median": 3564.0
+      },
+      {
+        "Zone_no": "5",
+        "count": 4090,
+        "mean": 239423.90762524775,
+        "median": 3330.0
+      },
+      {
+        "Zone_no": "2",
+        "count": 1415,
+        "mean": 598331.0737909566,
+        "median": 4600.0
+      },
+      {
+        "Zone_no": "4",
+        "count": 910,
+        "mean": 744203.4629347697,
+        "median": 4390.743801652892
+      },
+      {
+        "Zone_no": "3",
+        "count": 125,
+        "mean": 2153973.1711481493,
+        "median": 2424240.3240996352
+      }
+    ],
+    "target_by_mouza": [
+      {
+        "Mouza_Name": "Bamunara",
+        "count": 31131,
+        "mean": 32764.78490180039,
+        "median": 2200.0
+      },
+      {
+        "Mouza_Name": "Katrapota",
+        "count": 17535,
+        "mean": 65398.884922286976,
+        "median": 2553.7634408602153
+      },
+      {
+        "Mouza_Name": "Mallikbagan",
+        "count": 12754,
+        "mean": 56731.95203350768,
+        "median": 35000.0
+      },
+      {
+        "Mouza_Name": "Goda",
+        "count": 11842,
+        "mean": 406248.3206726762,
+        "median": 272726.8760336349
+      },
+      {
+        "Mouza_Name": "Arrah",
+        "count": 10819,
+        "mean": 88892.177424243,
+        "median": 4230.0
+      },
+      {
+        "Mouza_Name": "Sankarpur",
+        "count": 9953,
+        "mean": 994562.2704823802,
+        "median": 2452.500333247718
+      },
+      {
+        "Mouza_Name": "Ichhlabad",
+        "count": 9435,
+        "mean": 388731.52198449755,
+        "median": 246000.7082157303
+      },
+      {
+        "Mouza_Name": "Bahirsarbamangala",
+        "count": 9345,
+        "mean": 495199.93839568726,
+        "median": 330000.0
+      },
+      {
+        "Mouza_Name": "Nari",
+        "count": 8851,
+        "mean": 283566.63457167073,
+        "median": 156060.03274384848
+      },
+      {
+        "Mouza_Name": "Kanainatshal",
+        "count": 8399,
+        "mean": 226158.56259243682,
+        "median": 3800.0
+      },
+      {
+        "Mouza_Name": "Jaynagar",
+        "count": 8375,
+        "mean": 58570.22327120468,
+        "median": 55916.93989071038
+      },
+      {
+        "Mouza_Name": "Fuljhore",
+        "count": 8175,
+        "mean": 208033.75608635732,
+        "median": 226800.1414927485
+      },
+      {
+        "Mouza_Name": "Burdwan",
+        "count": 7116,
+        "mean": 608650.4352145954,
+        "median": 490909.33886966715
+      },
+      {
+        "Mouza_Name": "Gangadharpur",
+        "count": 6665,
+        "mean": 241943.917814182,
+        "median": 55917.333333333336
+      },
+      {
+        "Mouza_Name": "Dhulagori",
+        "count": 6642,
+        "mean": 114587.23478570952,
+        "median": 90000.0
+      },
+      {
+        "Mouza_Name": "Bhagabatipur",
+        "count": 5757,
+        "mean": 118366.68856606488,
+        "median": 87436.80769230769
+      },
+      {
+        "Mouza_Name": "Ranihati",
+        "count": 5727,
+        "mean": 142268.37317429567,
+        "median": 100000.0
+      },
+      {
+        "Mouza_Name": "Balidanga",
+        "count": 5542,
+        "mean": 414731.0858501918,
+        "median": 468208.1021931737
+      },
+      {
+        "Mouza_Name": "Paniara",
+        "count": 5173,
+        "mean": 140247.37424654886,
+        "median": 83333.33333333333
+      },
+      {
+        "Mouza_Name": "Radhanagar",
+        "count": 5006,
+        "mean": 667785.6810026735,
+        "median": 575757.9709016292
+      }
+    ],
+    "error_by_flat_or_land": [
+      {
+        "Flat_or_Land": "Land",
+        "count": 36553,
+        "mae": 97274.40947403651,
+        "mean_actual": 357648.8863458547
+      },
+      {
+        "Flat_or_Land": "Flat",
+        "count": 18165,
+        "mae": 286.5783546961145,
+        "mean_actual": 2804.9934109546557
+      }
+    ],
+    "error_by_transaction_code": [
+      {
+        "Transaction_code": "101",
+        "count": 32574,
+        "mae": 58341.35254725538,
+        "mean_actual": 202252.88478001524
+      },
+      {
+        "Transaction_code": "201",
+        "count": 8396,
+        "mae": 38768.04644777124,
+        "mean_actual": 274096.0167358941
+      },
+      {
+        "Transaction_code": "1210",
+        "count": 2832,
+        "mae": 19380.03715478678,
+        "mean_actual": 82417.91227891899
+      },
+      {
+        "Transaction_code": "1401",
+        "count": 1754,
+        "mae": 25109.81756277286,
+        "mean_actual": 171354.49574989604
+      },
+      {
+        "Transaction_code": "204",
+        "count": 1067,
+        "mae": 32622.701468306357,
+        "mean_actual": 219868.4095856726
+      },
+      {
+        "Transaction_code": "1201",
+        "count": 811,
+        "mae": 44455.92084866191,
+        "mean_actual": 130343.21473473751
+      },
+      {
+        "Transaction_code": "104",
+        "count": 754,
+        "mae": 20040.29862886783,
+        "mean_actual": 101313.1060520451
+      },
+      {
+        "Transaction_code": "110",
+        "count": 753,
+        "mae": 56444.090123756185,
+        "mean_actual": 563024.4513460133
+      },
+      {
+        "Transaction_code": "207",
+        "count": 749,
+        "mae": 31376.090816358534,
+        "mean_actual": 244392.5608995403
+      },
+      {
+        "Transaction_code": "105",
+        "count": 715,
+        "mae": 18897.674336853317,
+        "mean_actual": 80568.28805756061
+      },
+      {
+        "Transaction_code": "403",
+        "count": 597,
+        "mae": 33822.09117176951,
+        "mean_actual": 179870.8581667035
+      },
+      {
+        "Transaction_code": "138",
+        "count": 535,
+        "mae": 41477.14619079972,
+        "mean_actual": 501015.8173487115
+      },
+      {
+        "Transaction_code": "501",
+        "count": 498,
+        "mae": 40887.62796589614,
+        "mean_actual": 395269.42352225375
+      },
+      {
+        "Transaction_code": "307",
+        "count": 490,
+        "mae": 1087714.641766776,
+        "mean_actual": 2177127.535944044
+      },
+      {
+        "Transaction_code": "901",
+        "count": 340,
+        "mae": 39073.818238892934,
+        "mean_actual": 205590.7309772943
+      }
+    ],
+    "error_by_zone": [
+      {
+        "Zone_no": "0",
+        "count": 52568,
+        "mae": 66184.64763857963,
+        "mean_actual": 235322.56446837407
+      },
+      {
+        "Zone_no": "1",
+        "count": 873,
+        "mae": 31057.50200286433,
+        "mean_actual": 277603.618873529
+      },
+      {
+        "Zone_no": "5",
+        "count": 788,
+        "mae": 25376.873541891848,
+        "mean_actual": 263073.3709284283
+      },
+      {
+        "Zone_no": "2",
+        "count": 300,
+        "mae": 58763.37941949173,
+        "mean_actual": 503608.19669585925
+      },
+      {
+        "Zone_no": "4",
+        "count": 166,
+        "mae": 73072.758668096,
+        "mean_actual": 610639.1355508436
+      },
+      {
+        "Zone_no": "3",
+        "count": 23,
+        "mae": 209276.5603649995,
+        "mean_actual": 2241632.515571335
+      }
+    ]
+  }
+}

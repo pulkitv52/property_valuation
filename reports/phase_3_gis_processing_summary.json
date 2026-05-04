@@ -1,0 +1,44 @@
+{
+  "target_crs": "EPSG:32645",
+  "property_layer": {
+    "layer_name": "property_layer",
+    "input_row_count": 111497,
+    "output_row_count": 111497,
+    "input_crs": "EPSG:4326",
+    "output_crs": "EPSG:32645",
+    "invalid_geometry_count_before": 27,
+    "invalid_geometry_count_after": 0,
+    "null_geometry_count_after": 0,
+    "geometry_types_after": {
+      "Polygon": 111255,
+      "MultiPolygon": 242
+    }
+  },
+  "road_layer": {
+    "layer_name": "road_layer",
+    "input_row_count": 10345,
+    "output_row_count": 10345,
+    "input_crs": "EPSG:32645",
+    "output_crs": "EPSG:32645",
+    "invalid_geometry_count_before": 0,
+    "invalid_geometry_count_after": 0,
+    "null_geometry_count_after": 0,
+    "geometry_types_after": {
+      "LineString": 10298,
+      "MultiLineString": 47
+    }
+  },
+  "facilities_layer": {
+    "layer_name": "facilities_layer",
+    "input_row_count": 238,
+    "output_row_count": 238,
+    "input_crs": "EPSG:4326",
+    "output_crs": "EPSG:32645",
+    "invalid_geometry_count_before": 0,
+    "invalid_geometry_count_after": 0,
+    "null_geometry_count_after": 0,
+    "geometry_types_after": {
+      "Point": 238
+    }
+  }
+}

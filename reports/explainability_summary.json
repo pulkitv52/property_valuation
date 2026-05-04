@@ -1,0 +1,11 @@
+{
+  "model_type": "SegmentedModelPipeline",
+  "segment_values": [
+    "Flat",
+    "Land"
+  ],
+  "total_training_rows": 297437,
+  "sampled_explanations_count": 5,
+  "feature_importance_rows": 658,
+  "top_global_feature": "Road_Name_target_mean"
+}

@@ -1,0 +1,25 @@
+{
+  "input_row_count": 344079,
+  "duplicate_rows_removed": 40653,
+  "invalid_market_value_rows_removed": 37,
+  "invalid_area_rows_removed": 0,
+  "outliers_removed": 5952,
+  "rows_with_value_per_area": 297437,
+  "output_row_count": 297437,
+  "missing_after_cleaning": {
+    "premises": 295184,
+    "Road_code": 9,
+    "Road_Name": 217938,
+    "Special_project_Name": 1797,
+    "Approach_Road_Width": 63,
+    "Adjacent_to_Metal_Road": 121043,
+    "Proposed_Land_use_Name": 121043,
+    "Nature_Land_use_Name": 121043,
+    "Proposed_Apartment_use_Name": 176394,
+    "Nature_Apartment_use_name": 176394,
+    "bargadar": 121043,
+    "whether_tenant_purchaser": 121043,
+    "is_bargadar_purchaser": 121043,
+    "Road_Category": 297437
+  }
+}

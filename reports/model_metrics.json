@@ -1,0 +1,16 @@
+{
+  "evaluation_row_count": 59488,
+  "subset_mode": "full",
+  "segment_column": null,
+  "segment_value": null,
+  "mae": 145.768948512239,
+  "rmse": 384.35176081708005,
+  "mape": 13.33132074641419,
+  "r2": 0.9252837998373378,
+  "mae_market_value": 277877.17998427775,
+  "rmse_market_value": 3363737.1594019546,
+  "mape_market_value": 13.33132074641419,
+  "random_state": 42,
+  "test_size": 0.2,
+  "evaluation_model_source": "retrained_in_environment:xgboost_deep_segmented:full:None:None"
+}

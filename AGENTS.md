@@ -1,132 +1,280 @@
+# AGENTS.md — AI Property Valuation PoC (Use Case 1)
 
+---
 
+# ⚠️ CORE INSTRUCTION (READ FIRST)
 
-You are an expert Full Stack Engineer for this project.
+This project is primarily an **AI/ML + GIS system**.
 
-## Your Role
+> ❗ Build **data pipelines and ML models FIRST**, then APIs and UI.
 
-- You are fluent in Python (Backend) and TypeScript (Frontend).
-- You follow strict engineering standards: robust error handling, type safety, and clear documentation.
-- Your task: Implement features across the entire stack, managing infrastructure, backend logic, and frontend UI.
-- You act as a senior engineer, prioritizing code quality, maintainability, and scalability.
-- This is a greenfield project, so, do not worry about legacy code, backwward compatibility or data loss. Focus on building the best possible system based on the requirements.
+---
 
-## Project Knowledge
+# 🎯 OBJECTIVE
 
-- **Tech Stack:**
-  - **Backend:** Python, `uv` (package manager), `fastapi`, `pydantic` (settings), `pytest`.
-  - **Frontend:** TypeScript, `pnpm` (package manager), `vite`, `shadcn/ui`.
-  - **Infrastructure:** `docker-compose`, `Minio` (S3), `Postgres`, `Redis`, `Qdrant`.
-- **File Structure:**
-  - `backend/` – Python source code (assumed structure based on guidelines).
-  - `frontend/` – TypeScript source code (assumed structure based on guidelines).
-  - `wikis/` – Project documentation.
-  - `.env`, `.env.example`, `Makefile`, `docker-compose.yml` – Configuration and orchestration.
+Build a PoC system that:
 
-## Commands you can use
+1. Predicts **property market value**
+2. Creates **AI-based valuation zones**
+3. Explains **factors affecting valuation**
+4. Validates predictions using real transaction data
 
-You primarily use `make` commands to manage the lifecycle of the application.
+---
 
-### Infra Management
+# 🧠 PROBLEM FORMULATION
 
-- `make up`: Ups the infra only.
-- `make down`: Downs the infra only.
-- `make nuke`: Downs and deleted any volume.
-- `make up-all`: Ups infra + backend + frontend.
-- `make down-all`: Downs infra + backend + frontend.
-- `make nuke-all`: Downs and deletes any volume for infra + backend + frontend.
+We solve:
 
-### Backend Commands
+### 1. Price Prediction (Supervised ML)
 
-- `make install-uv`: Installs `uv` package manager.
-- `make backend-start`: Starts backend on specified port.
-- `make backend-stop`: Stops backend safely.
-- `make backend-setup`: Setups backend (`uv sync`).
-- `make logs-backend`: Tails backend logs.
+```text
+value_per_area = market_value / Area
+```
 
-### Frontend Commands
+Model learns:
 
-- `make install-pnpm`: Installs `pnpm` package manager.
-- `make frontend-start`: Starts frontend on specified port.
-- `make frontend-stop`: Stops frontend safely.
-- `make frontend-setup`: Setups frontend (`pnpm install`).
-- `make frontend-preview`: Builds and serves for preview.
-- `make logs-frontend`: Tails frontend logs.
+```text
+value_per_area = f(location + area + road + facilities + land_use)
+```
 
-### Combined Commands
+---
 
-- `make start`: Runs `up` + `backend-start` + `frontend-start`.
-- `make stop`: Runs `backend-stop` + `frontend-stop` + `down`.
-- `make setup`: Runs `backend-setup` + `frontend-setup`.
-- `make restart`: Runs `stop` + `start`.
-- `make logs`: Tails logs from both backend and frontend.
-- `make ps`: Shows status of infra, backend and frontend.
-- `make health`: Checks health of services.
+### 2. Zone Creation (Clustering)
 
-## Engineering Standards
+* Group similar valuation regions
+* Based on spatial + pricing patterns
 
-### General
+---
 
-- **Version Control:** Write clear commit messages. Use AI to generate them if needed.
-- **Environment:**
-  - Use `.env` for local development.
-  - Maintain `.env.example` with all required variables.
-  - Passwords must be URL encoded.
-  - Always use passwords for infra connections (Redis, Qdrant, Postgres).
-- **Docker Compose:** Use `${VAR:-default}` syntax for environment variables.
+### 3. Explainability
 
-### Backend (Python)
+* Identify why a property is priced high/low
 
-- **Package Manager:** `uv`.
-- **Type Safety:** Use proper type hints and a type checker like `ty`.
-- **Testing:** Write test cases. Run tests before marking tasks done.
-- **Async:** Use `async` wherever possible.
-- **Real-time:** Utilize `yield` with `SSE` for updates.
-- **Linting:** Use `black` and `isort` via pre-commit hooks.
-- **Imports at Top:** All imports should be at the top of the file.
-- **Best Practices:**
-  - Minio: Keep everything in one bucket.
-  - Postgres: Single database if possible; avoid passing DB in URL.
-  - Redis: Use logical database feature.
+---
 
-### Frontend (TypeScript)
+# 📊 DATA CONTEXT
 
-- **Package Manager:** `pnpm`.
-- **Config:** Load `allowedHosts`, `PORT`, `API_BASE_URL` from environment.
-- **Build:** Add scripts to type check and build.
-- Always run `pnpm build` before marking tasks done.
+## Transaction Dataset (Primary)
 
-## Boundaries
+Contains:
 
-- **Always do:**
-  - Initialize projects yourself.
-  - Write tests.
-  - formatting (`black`, `isort`, `prettier` equivalent).
-  - Update `wiki` with project changes.
-  - Check types and run tests before finishing.
-- **Ask first:**
-  - Adding new heavy dependencies.
-  - Changing core infrastructure architecture.
-- **Never do:**
-  - Hardcode passwords or secrets.
-  - Commit `.env` files.
-  - Mix backend and frontend code in the same directory (keep them in separate folders).
-  - Skip writing tests.
+* `market_value` → target
+* `Area`
+* `Road_Name`, `Zone_no`
+* `Urban/Rural`
+* `Land_use`
+* Legal/property attributes
 
-## Guidline for Commit Messages
+---
 
-- Use the following format for commit messages:
+## GIS Datasets
 
-  ```txt
-  <type>(<scope>): <subject>
+### Property Layer
 
-  <body>
+* Geometry (polygons/points)
 
-  <footer>
-  ```
+### Road Network
 
-- **type:** chore, docs, feat, fix, refactor, style, test.
-- **scope:** backend, frontend, infra, general.
-- **subject:** A brief description of the change (max 50 characters).
-- **body:** A detailed description of the change, should be a list of bullet points (optional).
-- **footer:** Any relevant issue numbers or breaking change notes (optional).
+* Connectivity
+
+### Facilities
+
+* Schools, hospitals, amenities
+
+---
+
+# 🚀 EXECUTION PLAN (STRICT)
+
+Follow **use_case_1_property_valuation_implementation_plan.md**
+
+### Mandatory order:
+
+1. Data Understanding
+2. Data Cleaning
+3. GIS Processing
+4. Data Merge
+5. Feature Engineering
+6. Model Training
+7. Evaluation
+8. Zone Clustering
+9. Explainability
+10. API
+11. Dashboard
+
+👉 Do NOT change order
+👉 Do NOT skip phases
+
+---
+
+# 🏗️ MODULES TO BUILD
+
+## Data Layer
+
+* `data_loader.py`
+* `data_cleaning.py`
+
+## GIS Layer
+
+* `gis_processing.py`
+
+## Feature Engineering
+
+* `feature_engineering.py`
+
+## ML Layer
+
+* `model_training.py`
+* `evaluation.py`
+
+## Clustering
+
+* `zone_clustering.py`
+
+## Explainability
+
+* `explainability.py`
+
+## Interface
+
+* `api.py`
+* `frontend/app.py`
+
+---
+
+# ⚙️ ML REQUIREMENTS
+
+## Target
+
+Always use:
+
+```text
+value_per_area = market_value / Area
+```
+
+---
+
+## Features (MANDATORY)
+
+### Spatial Features
+
+* distance_to_nearest_road
+* distance_to_nearest_facility
+* facility_count (500m / 1km)
+
+### Property Features
+
+* Area
+* Land use
+* Flat_or_Land
+* Urban/Rural
+
+### Infrastructure Features
+
+* Road width
+* Road category
+* Connectivity
+
+---
+
+## GIS RULES
+
+* ❗ Always use projected CRS (not lat/lon) for distance
+* Use spatial joins where needed
+* Fix invalid geometries
+
+---
+
+# 🧪 MODELING RULES
+
+* Start with RandomForest
+* Then optionally use XGBoost / LightGBM
+* Use log transformation:
+
+```text
+log1p(value_per_area)
+```
+
+---
+
+# 📊 EVALUATION METRICS
+
+* MAE
+* RMSE
+* MAPE
+* R²
+
+---
+
+# 📦 OUTPUTS REQUIRED
+
+* Trained model
+* Model metrics
+* Predicted vs actual values
+* AI zones
+* Feature importance
+* Dashboard
+* API
+
+---
+
+# ❌ WHAT NOT TO DO
+
+* Do NOT start frontend first
+* Do NOT skip feature engineering
+* Do NOT treat as CRUD system
+* Do NOT ignore GIS
+* Do NOT directly predict raw `market_value`
+
+---
+
+# 🧠 ENGINEERING STANDARDS
+
+## General
+
+* Use `.env`
+* No hardcoded secrets
+* Modular code
+* Logging enabled
+
+## Python
+
+* Type hints
+* Clean structure
+* Reusable functions
+
+## ML
+
+* Save intermediate datasets
+* Ensure reproducibility
+* Handle missing values properly
+
+---
+
+# 🔁 WORKFLOW RULE
+
+At every step:
+
+1. Read implementation plan
+2. Implement phase completely
+3. Save outputs
+4. Move to next phase
+
+---
+
+# 🚀 HOW TO EXECUTE
+
+Start with:
+
+> Phase 1: Data Loading & Understanding
+
+Then proceed step-by-step.
+
+---
+
+# 🔥 FINAL RULE
+
+> This is a **data + ML system first**, not an application.
+
+---
+
+# END

@@ -1,0 +1,27 @@
+{
+  "expected_join_columns": [
+    "query_year",
+    "query_no",
+    "Deed_No",
+    "Deed_Year",
+    "sl_no_Property",
+    "property_district_Name",
+    "ps_code",
+    "mouza_code",
+    "plot_no",
+    "bata_plot_no"
+  ],
+  "expected_value_columns": [
+    "mvdb_value",
+    "circle_rate_value",
+    "guideline_value",
+    "government_valuation"
+  ],
+  "supported_formats": [
+    ".csv",
+    ".xlsx",
+    ".xls",
+    ".parquet"
+  ],
+  "description": "Provide a government valuation dataset with one valuation column and stable join identifiers so AI predictions can be compared against MVDB or circle-rate values."
+}

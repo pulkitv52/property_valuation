@@ -1,0 +1,160 @@
+{
+  "model_name": "XGBRegressor",
+  "feature_count": 434,
+  "top_features": [
+    {
+      "clean_feature_name": "Proposed_Land_use_Code_   ",
+      "importance": 0.5325008034706116,
+      "feature_group": "transaction_context",
+      "importance_pct": 53.97570037841797
+    },
+    {
+      "clean_feature_name": "Nature_Land_use_Code_   ",
+      "importance": 0.2812170088291168,
+      "feature_group": "transaction_context",
+      "importance_pct": 28.504905700683594
+    },
+    {
+      "clean_feature_name": "Adjacent_to_Metal_Road_Missing",
+      "importance": 0.14366060495376587,
+      "feature_group": "road_access",
+      "importance_pct": 14.561821937561035
+    },
+    {
+      "clean_feature_name": "Rural_flag",
+      "importance": 0.007314135320484638,
+      "feature_group": "other",
+      "importance_pct": 0.7413802742958069
+    },
+    {
+      "clean_feature_name": "Road_Name_Missing",
+      "importance": 0.006070321891456842,
+      "feature_group": "road_access",
+      "importance_pct": 0.6153039932250977
+    },
+    {
+      "clean_feature_name": "PS_Name_Panchla",
+      "importance": 0.0029172245413064957,
+      "feature_group": "other",
+      "importance_pct": 0.2956976592540741
+    },
+    {
+      "clean_feature_name": "Urban_flag",
+      "importance": 0.0026855915784835815,
+      "feature_group": "other",
+      "importance_pct": 0.2722187340259552
+    },
+    {
+      "clean_feature_name": "Nature_Land_use_Name_Industrial Use",
+      "importance": 0.0016150777228176594,
+      "feature_group": "transaction_context",
+      "importance_pct": 0.16370858252048492
+    },
+    {
+      "clean_feature_name": "Zone_no_0",
+      "importance": 0.0012043758761137724,
+      "feature_group": "other",
+      "importance_pct": 0.12207875400781631
+    },
+    {
+      "clean_feature_name": "PS_Name_Kanksa",
+      "importance": 0.001162160187959671,
+      "feature_group": "other",
+      "importance_pct": 0.11779965460300446
+    },
+    {
+      "clean_feature_name": "Adjacent_to_Metal_Road_flag",
+      "importance": 0.0009755682549439371,
+      "feature_group": "road_access",
+      "importance_pct": 0.09888619929552078
+    },
+    {
+      "clean_feature_name": "Proposed_Land_use_Name_Shali",
+      "importance": 0.000959250028245151,
+      "feature_group": "transaction_context",
+      "importance_pct": 0.0972321406006813
+    },
+    {
+      "clean_feature_name": "Road_Name_Unassessed Road (Fuljhore)",
+      "importance": 0.0007316350820474327,
+      "feature_group": "road_access",
+      "importance_pct": 0.07416048645973206
+    },
+    {
+      "clean_feature_name": "Adjacent_to_Metal_Road_N",
+      "importance": 0.0006487552891485393,
+      "feature_group": "road_access",
+      "importance_pct": 0.0657595619559288
+    },
+    {
+      "clean_feature_name": "GP_target_mean",
+      "importance": 0.0005858659860678017,
+      "feature_group": "locality_target_encoding",
+      "importance_pct": 0.05938493832945824
+    },
+    {
+      "clean_feature_name": "Transaction_code_307",
+      "importance": 0.0005251364782452583,
+      "feature_group": "transaction_context",
+      "importance_pct": 0.053229235112667084
+    },
+    {
+      "clean_feature_name": "Mouza_Name_Jangalpur",
+      "importance": 0.0004967962740920484,
+      "feature_group": "other",
+      "importance_pct": 0.05035659298300743
+    },
+    {
+      "clean_feature_name": "property_district_Name_target_mean",
+      "importance": 0.0004489239363465458,
+      "feature_group": "locality_target_encoding",
+      "importance_pct": 0.0455041266977787
+    },
+    {
+      "clean_feature_name": "Proposed_Land_use_Code_003",
+      "importance": 0.00044741370948031545,
+      "feature_group": "transaction_context",
+      "importance_pct": 0.045351047068834305
+    },
+    {
+      "clean_feature_name": "Proposed_Land_use_Code_021",
+      "importance": 0.00038987238076515496,
+      "feature_group": "transaction_context",
+      "importance_pct": 0.039518505334854126
+    }
+  ],
+  "group_importance": [
+    {
+      "feature_group": "transaction_context",
+      "importance": 0.8236767649650574
+    },
+    {
+      "feature_group": "road_access",
+      "importance": 0.15426966547966003
+    },
+    {
+      "feature_group": "other",
+      "importance": 0.019246311858296394
+    },
+    {
+      "feature_group": "locality_target_encoding",
+      "importance": 0.0016653179191052914
+    },
+    {
+      "feature_group": "facility_proximity",
+      "importance": 0.0004696835530921817
+    },
+    {
+      "feature_group": "geometry_location",
+      "importance": 0.00039439566899091005
+    },
+    {
+      "feature_group": "transaction_time",
+      "importance": 0.0002283754147356376
+    },
+    {
+      "feature_group": "property_core",
+      "importance": 4.9559523176867515e-05
+    }
+  ]
+}

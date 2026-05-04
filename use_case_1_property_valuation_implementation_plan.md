@@ -169,7 +169,7 @@ valuation_poc/
 │   ├── evaluation.py
 │   └── api.py
 │
-├── dashboard/
+├── frontend/
 │   └── app.py
 │
 ├── models/
@@ -962,7 +962,7 @@ The PoC should be considered successful if it demonstrates:
 3. AI-generated zones can be visualized on map.
 4. Model performance can be measured using actual `market_value`.
 5. Key valuation factors can be explained.
-6. Output can be shown through a dashboard/API.
+6. Output can be shown through a frontend/API.
 
 ---
 
@@ -1161,7 +1161,7 @@ generate_property_explanation(property_record, prediction, feature_importance)
 Create:
 
 ```text
-dashboard/app.py
+frontend/app.py
 ```
 
 Include:
@@ -1255,9 +1255,9 @@ python src/feature_engineering.py
 python src/model_training.py
 python src/zone_clustering.py
 
-streamlit run dashboard/app.py
+streamlit run frontend/app.py
 
-uvicorn src.api:app --reload
+uvicorn backend.src.api:app --reload
 ```
 
 ---
