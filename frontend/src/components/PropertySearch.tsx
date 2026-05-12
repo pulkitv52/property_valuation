@@ -80,7 +80,7 @@ export default function PropertySearch({
                   </strong>
                 </span>
                 <span>Original Area Unit: {property.area_measurement_label ?? 'NA'}</span>
-                <span>AI Zone: {property.ai_zone_name ?? property.ai_zone ?? 'NA'}</span>
+                <span>Zone: {property.ai_zone_name ?? property.ai_zone ?? 'NA'}</span>
               </div>
             </button>
           );

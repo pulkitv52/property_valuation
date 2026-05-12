@@ -16,6 +16,7 @@ class DashboardSummaryResponse(BaseModel):
     zones: dict[str, Any]
     explainability: dict[str, Any]
     property_type_analysis: list[dict[str, Any]]
+    zone_property_type_analysis: list[dict[str, Any]] | None = None
     mvdb_status: str
 
 

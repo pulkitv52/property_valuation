@@ -15,18 +15,18 @@ from sklearn.preprocessing import StandardScaler
 LOGGER = logging.getLogger(__name__)
 
 ZONE_LABELS = {
-    "AI_ZONE_01": ("Premium Urban Land Zone", "High-value urban land cluster with strong facility access and short road distance."),
-    "AI_ZONE_02": ("High-Value Rural Land Zone", "Higher-value rural or peri-urban land cluster with lower facility access."),
-    "AI_ZONE_03": ("Accessible Rural Land Zone", "Mid-high rural land cluster with better-than-average accessibility and services."),
-    "AI_ZONE_04": ("Mid-Value Rural Land Zone", "Broader lower-mid rural land cluster with weaker access and lower density."),
-    "AI_ZONE_05": ("Urban Flat Zone", "Urban flat or apartment cluster with strong amenity access and low value-per-area scale."),
-    "AI_ZONE_06": ("Lower-Value Flat Zone", "Lower-value flat or apartment cluster with weaker amenity access and peri-urban profile."),
-    "AI_ZONE_07": ("Low-Value Rural Land Zone", "Lowest-tier rural land cluster with limited road access and sparse amenities."),
-    "AI_ZONE_08": ("Peripheral Rural Zone", "Remote or peripheral rural land cluster at the edge of the market."),
-    "AI_ZONE_09": ("Emerging Growth Zone", "Transitional zone showing early signs of value appreciation."),
-    "AI_ZONE_10": ("Deep Rural Zone", "Very low-density rural land cluster far from urban centres."),
-    "AI_ZONE_11": ("Mixed Peri-Urban Zone", "Mixed peri-urban cluster with varied property types and moderate access."),
-    "AI_ZONE_12": ("Outlier Market Zone", "Statistically distinct cluster with atypical market behaviour."),
+    "AI_ZONE_01": ("Z-01 | Premium Urban Market", "High-value core market cluster with strong access to roads and nearby facilities."),
+    "AI_ZONE_02": ("Z-02 | Growth Corridor", "Fast-moving market corridor with strong pricing and expansion potential."),
+    "AI_ZONE_03": ("Z-03 | Accessible Mid-Market", "Well-connected mid-market zone with balanced value and service access."),
+    "AI_ZONE_04": ("Z-04 | Mixed Residential Belt", "Broad residential market belt with mixed price points and moderate accessibility."),
+    "AI_ZONE_05": ("Z-05 | Emerging Urban Fringe", "Outer urban market showing active development and rising accessibility."),
+    "AI_ZONE_06": ("Z-06 | Affordable Expansion Zone", "Value-oriented expansion market with lower price levels and developing infrastructure."),
+    "AI_ZONE_07": ("Z-07 | Outer Value Market", "Lower-priced outer-market cluster with sparse amenities and longer access distances."),
+    "AI_ZONE_08": ("Peripheral Opportunity Zone", "Peripheral market pocket with selective growth opportunities."),
+    "AI_ZONE_09": ("Transitional Growth Zone", "Transition market zone showing improving value and access conditions."),
+    "AI_ZONE_10": ("Remote Market Cluster", "Low-density remote market area far from major urban centres."),
+    "AI_ZONE_11": ("Mixed Access Corridor", "Mixed-use access corridor with diverse property patterns and moderate connectivity."),
+    "AI_ZONE_12": ("Special Market Cluster", "Distinct market cluster with atypical pricing or spatial behaviour."),
 }
 
 BASE_ZONE_FEATURES = [

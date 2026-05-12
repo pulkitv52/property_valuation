@@ -12,3 +12,12 @@ class PropertyRecordResponse(BaseModel):
 
 class PropertySearchResponse(BaseModel):
     results: list[dict[str, Any]]
+
+
+class PredictionRequest(BaseModel):
+    records: list[dict[str, Any]]
+
+
+class PredictionResponse(BaseModel):
+    results: list[dict[str, Any]]
+    summary: dict[str, Any]

@@ -12,7 +12,12 @@ from backend.src.schemas.explanation import (
     PropertyExplanationResponse,
     SampleExplanationsResponse,
 )
-from backend.src.schemas.prediction import PropertyRecordResponse, PropertySearchResponse
+from backend.src.schemas.prediction import (
+    PredictionRequest,
+    PredictionResponse,
+    PropertyRecordResponse,
+    PropertySearchResponse,
+)
 from backend.src.schemas.summary import DashboardSummaryResponse, HealthResponse, MVDBStatusResponse
 from backend.src.schemas.zone import ZoneDetailResponse, ZoneGeoJSONResponse, ZoneSummaryListResponse
 from backend.src.services.dashboard_service import get_dashboard_summary
@@ -22,6 +27,7 @@ from backend.src.services.explanation_service import (
     get_sample_explanations,
 )
 from backend.src.services.prediction_service import get_property_by_id, list_properties
+from backend.src.services.inference_service import predict_records
 from backend.src.services.zone_service import get_zone_by_id, get_zone_geojson, get_zone_summary_records
 from backend.src.services.artifact_service import load_mvdb_summary, validate_required_artifacts, warm_artifact_caches
 
@@ -84,6 +90,15 @@ def property_detail(property_id: str) -> PropertyRecordResponse:
     except KeyError as exc:
         raise HTTPException(status_code=404, detail=f'Property {property_id} not found') from exc
     return PropertyRecordResponse(property_id=property_id, payload=payload)
+
+
+@app.post('/predict', response_model=PredictionResponse)
+def predict(request: PredictionRequest) -> PredictionResponse:
+    try:
+        results, summary = predict_records(request.records)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return PredictionResponse(results=results, summary=summary)
 
 
 @app.get('/zones', response_model=ZoneSummaryListResponse)

@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { NavLink, Route, Routes } from 'react-router-dom';
 import Explainability from './pages/Explainability';
+import BatchInference from './pages/BatchInference';
 import ModelPerformance from './pages/ModelPerformance';
 import MVDBComparison from './pages/MVDBComparison';
 import Overview from './pages/Overview';
@@ -21,9 +22,9 @@ import { Activity } from 'lucide-react';
 
 const navItems = [
   ['/', 'Overview'],
-  ['/performance', 'AI Performance'],
   ['/zones', 'Market Zones'],
   ['/properties', 'Property Lookup'],
+  ['/batch-inference', 'Batch Inference'],
   ['/explainability', 'Why This Price?'],
   ['/mvdb', 'Gov Rate Compare'],
 ] as const;
@@ -103,21 +104,16 @@ export default function App() {
     }
   }
 
-  const headerMeta = useMemo(() => {
-    if (!summary) return 'Loading valuation dashboard...';
-    return `${summary.best_candidate_name} | ${summary.property_count.toLocaleString()} evaluated properties`;
-  }, [summary]);
-
   return (
     <div className="app-shell">
       <aside className="app-sidebar">
         <div>
+          <img src="/kpmg_logo.png" alt="KPMG Logo" className="h-10 w-auto mb-6 object-contain" />
           <div className="text-[11px] font-bold tracking-[0.2em] uppercase text-primary mb-2 flex items-center gap-2">
             <Activity className="w-4 h-4" />
             AI Property Valuation
           </div>
-          <h1 className="text-2xl font-bold tracking-tight text-foreground mt-2 mb-2">Production-Ready PoC</h1>
-          <p className="text-sm text-muted-foreground">{headerMeta}</p>
+
         </div>
         <nav className="flex flex-col gap-2 flex-1">
           {navItems.map(([path, label]) => (
@@ -145,7 +141,6 @@ export default function App() {
           ) : null}
           <Routes>
             <Route path="/" element={<Overview summary={summary} />} />
-            <Route path="/performance" element={<ModelPerformance summary={summary} featureImportance={featureImportance} />} />
             <Route path="/zones" element={<Zones zones={zones} zoneGeoJson={zoneGeoJson} />} />
             <Route
               path="/properties"
@@ -164,6 +159,7 @@ export default function App() {
                 />
               }
             />
+            <Route path="/batch-inference" element={<BatchInference />} />
             <Route path="/explainability" element={<Explainability featureImportance={featureImportance} sampleExplanations={sampleExplanations} />} />
             <Route path="/mvdb" element={<MVDBComparison mvdbStatus={mvdbStatus} />} />
           </Routes>

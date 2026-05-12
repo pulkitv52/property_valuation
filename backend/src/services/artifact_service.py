@@ -14,6 +14,7 @@ import numpy as np
 import pandas as pd
 
 from backend.src.config import settings
+from backend.src.zone_clustering import ZONE_LABELS
 
 LOGGER = logging.getLogger(__name__)
 IDENTIFIER_COLUMNS = [
@@ -164,7 +165,12 @@ def load_zone_clustering_summary() -> dict[str, Any]:
 
 @lru_cache(maxsize=1)
 def load_zone_summary() -> pd.DataFrame:
-    return pd.read_csv(settings.reports_dir / 'zone_summary.csv')
+    df = pd.read_csv(settings.reports_dir / 'zone_summary.csv')
+    if 'ai_zone' in df.columns:
+        df = df.copy()
+        df['ai_zone_name'] = df['ai_zone'].map(lambda value: ZONE_LABELS.get(value, (value, ''))[0])
+        df['ai_zone_description'] = df['ai_zone'].map(lambda value: ZONE_LABELS.get(value, (value, ''))[1])
+    return df
 
 
 @lru_cache(maxsize=1)
@@ -175,6 +181,12 @@ def load_zone_polygons() -> gpd.GeoDataFrame:
 @lru_cache(maxsize=1)
 def load_zone_assignments() -> pd.DataFrame:
     df = pd.read_parquet(settings.processed_data_dir / 'ai_zone_assignments.parquet')
+    if 'ai_zone' in df.columns:
+        df = df.copy()
+        # Normalize to canonical labels in case persisted artifacts were generated
+        # before the latest naming scheme was introduced.
+        df['ai_zone_name'] = df['ai_zone'].map(lambda value: ZONE_LABELS.get(value, (value, ''))[0])
+        df['ai_zone_description'] = df['ai_zone'].map(lambda value: ZONE_LABELS.get(value, (value, ''))[1])
     if 'property_id' not in df.columns:
         df = df.copy()
         df['property_id'] = df.apply(build_property_id, axis=1)

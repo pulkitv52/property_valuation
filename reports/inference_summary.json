@@ -1,0 +1,7 @@
+{
+  "input_row_count": 10,
+  "output_row_count": 10,
+  "model_path": "models/valuation_model.pkl",
+  "zone_assignment_mode": "nearest_zone_median_latlon",
+  "rows_with_zone_assignment": 10
+}

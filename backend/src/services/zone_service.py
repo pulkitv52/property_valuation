@@ -29,6 +29,12 @@ def get_zone_geojson() -> dict[str, Any]:
     polygons['avg_value_per_sqft'] = polygons['ai_zone'].map(
         lambda z: summary_df.loc[z, 'avg_value_per_area'] if z in summary_df.index else None
     )
+    polygons['ai_zone_name'] = polygons['ai_zone'].map(
+        lambda z: summary_df.loc[z, 'ai_zone_name'] if z in summary_df.index else None
+    )
+    polygons['ai_zone_description'] = polygons['ai_zone'].map(
+        lambda z: summary_df.loc[z, 'ai_zone_description'] if z in summary_df.index else None
+    )
     return normalize_for_json(polygons.to_crs('EPSG:4326').__geo_interface__)
 
 
